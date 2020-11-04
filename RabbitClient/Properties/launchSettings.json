@@ -1,0 +1,11 @@
+﻿{
+  "profiles": {
+    "RabbitClient": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:5002",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
