@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RabbitClient.Extensions;
 
 namespace RabbitClient
 {
@@ -18,7 +19,7 @@ namespace RabbitClient
         public void ConfigureServices(IServiceCollection services)
         {
             services
-                //.AddRabbitMassTransit()
+                .AddRabbitMasstransit()
                 .AddControllers();
         }
 
