@@ -22,6 +22,7 @@ namespace RabbitServer.Controllers
         [HttpPost]
         public async Task<ActionResult> SendMessageAsync(string messageToSend)
         {
+            this.logger.LogInformation("Sending following message : " + messageToSend);
             await this.publishEndpoint
                 .Publish<IMessageContract>(new
                 {

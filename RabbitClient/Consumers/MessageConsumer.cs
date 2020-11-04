@@ -16,7 +16,7 @@ namespace RabbitClient.Consumers
 
         public Task Consume(ConsumeContext<IMessageContract> context)
         {
-            this.logger.LogInformation(context.Message.Message);
+            this.logger.LogInformation( "Receiving following message : " + context.Message.Message);
             return Task.CompletedTask;
         }
     }
