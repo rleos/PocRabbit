@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitContracts", "RabbitCo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitClient", "RabbitClient\RabbitClient.csproj", "{B202DF44-4D41-4216-A72A-3CD4E24054DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecondClient", "SecondClient\SecondClient.csproj", "{0E570E7D-6F9B-44DF-9862-1EBB40ACE0C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecondClient", "SecondClient\SecondClient.csproj", "{0E570E7D-6F9B-44DF-9862-1EBB40ACE0C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaultClient", "FaultClient\FaultClient.csproj", "{DDA4ED83-9C17-4B9A-A358-95F87A228612}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0E570E7D-6F9B-44DF-9862-1EBB40ACE0C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E570E7D-6F9B-44DF-9862-1EBB40ACE0C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E570E7D-6F9B-44DF-9862-1EBB40ACE0C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA4ED83-9C17-4B9A-A358-95F87A228612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA4ED83-9C17-4B9A-A358-95F87A228612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA4ED83-9C17-4B9A-A358-95F87A228612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA4ED83-9C17-4B9A-A358-95F87A228612}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

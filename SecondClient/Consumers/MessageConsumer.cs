@@ -1,6 +1,7 @@
 ﻿using MassTransit;
 using Microsoft.Extensions.Logging;
 using RabbitContracts.Contracts;
+using System;
 using System.Threading.Tasks;
 
 namespace SecondClient.Consumers
@@ -17,7 +18,7 @@ namespace SecondClient.Consumers
         public Task Consume(ConsumeContext<IMessageContract> context)
         {
             this.logger.LogInformation("Second client receiving following message : " + context.Message.Message);
-            return Task.CompletedTask;
+            throw new Exception("This is an error");
         }
     }
 }
