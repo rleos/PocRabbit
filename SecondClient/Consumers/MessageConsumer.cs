@@ -3,7 +3,7 @@ using Microsoft.Extensions.Logging;
 using RabbitContracts.Contracts;
 using System.Threading.Tasks;
 
-namespace RabbitClient.Consumers
+namespace SecondClient.Consumers
 {
     public class MessageConsumer : IConsumer<IMessageContract>
     {
@@ -16,7 +16,7 @@ namespace RabbitClient.Consumers
 
         public Task Consume(ConsumeContext<IMessageContract> context)
         {
-            this.logger.LogInformation( "First client receiving following message : " + context.Message.Message);
+            this.logger.LogInformation("Second client receiving following message : " + context.Message.Message);
             return Task.CompletedTask;
         }
     }
