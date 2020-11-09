@@ -10,14 +10,12 @@ namespace SecondClient.Extensions
         {
             services.AddMassTransit(x =>
             {
-                x.AddConsumer<MessageConsumer>();
-                x.UsingRabbitMq((context, cfg) =>
-                {
-                    cfg.ReceiveEndpoint("event-listener", e =>
+                x.AddConsumer<MessageConsumer>()
+                    .Endpoint(e =>
                     {
-                        e.ConfigureConsumer<MessageConsumer>(context);
+                        e.Name = "second_client";
                     });
-                });
+                x.UsingRabbitMq((context, cfg) => cfg.ConfigureEndpoints(context));
             });
 
             services.AddMassTransitHostedService();
